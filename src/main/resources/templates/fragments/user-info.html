@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+</head>
+<body>
+
+<!-- Fragmento reutilizable que recibe el objeto "user" -->
+
+<div th:fragment="userInfo">
+    <div class="user-info">
+        <h3>Información del usuario</h3>
+        <p><strong>Usuario:</strong> <span th:text="${user.userName}"></span></p>
+        <p><strong>Nombre:</strong> <span th:text="${user.name}"></span></p>
+        <p><strong>Correo:</strong> <span th:text="${user.email}"></span></p>
+        <p><strong>Tipo:</strong> <span th:text="${user.type}"></span></p>
+    </div>
+</div>
+
+</body>
+</html>
